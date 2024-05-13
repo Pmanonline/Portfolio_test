@@ -1,0 +1,368 @@
+/* CSS for the header and navigation menu */
+header {
+  background-color: #958e8e;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: blue;
+}
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+/* Responsive  header styling */
+@media screen and (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+/* CSS for the header and navigation menu  ENDS*/
+
+/* CSS for the About section  STARTS*/
+#about {
+  padding: 0 5px;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-text {
+  flex: 60%;
+  margin-top: 130px;
+}
+
+.about-image {
+  flex: 30%;
+}
+
+.about-image img {
+}
+.image1 {
+  max-width: 100%;
+  height: auto;
+}
+
+.nameclass {
+  font-size: 30px;
+  font-size: x-large;
+}
+
+.contactBtn {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.contactBtn:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-image {
+    order: -1;
+  }
+}
+
+/* Additional Images Section */
+.additional-images-section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.additional-images-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media screen and (min-width: 641px) {
+  .additional-image {
+    max-width: 100%;
+    width: calc(25% - 20px);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .additional-images-container {
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+/* CSS for the About section  ENDS*/
+
+/* CSS for the Education section  ENDS*/
+#education {
+  padding: 0 5px;
+}
+#education h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+.educationschl {
+  font-weight: bold;
+}
+.eduTime {
+  font-style: italic;
+}
+.eduCourse {
+  font-weight: 600;
+}
+/* CSS for the Education section  ENDS*/
+
+/* CSS for the Experience section STARTS */
+
+#experience {
+  padding: 50px 0;
+}
+
+#experience h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+article {
+  margin-bottom: 40px;
+}
+
+article h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+article ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article li {
+  margin-bottom: 10px;
+}
+.subHeadings {
+  color: rgb(85, 84, 84);
+}
+
+/* CSS for the Experience section ENDS */
+
+/* CSS for the Projects section  STARTS*/
+#projects {
+  padding: 50px 0;
+}
+#projects h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-item {
+  width: calc(33.33% - 10px);
+  margin-bottom: 30px;
+}
+
+.project-item img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .project-item {
+    width: calc(50% - 10px);
+  }
+}
+@media screen and (max-width: 640px) {
+  .project-item {
+    width: 100%;
+  }
+}
+.viewBTN {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.viewBTN:hover {
+  background-color: #0056b3;
+}
+
+/* CSS for the Projects section  ENDS*/
+
+/* CSS for the Skills section STARTS */
+#skills {
+  padding: 50px 0;
+}
+#skills h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.skill-item {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+  gap: 20px;
+  margin: 5px 5px 5px 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .skill-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .skill-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* CSS for the Skills section ENDS */
+
+/* CSS for the Contact section STARTS */
+#contact {
+  padding: 50px 0;
+}
+#contact h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 640px) {
+  .contact-form {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.submitButton {
+  text-align: center;
+}
+/* CSS for the Contact section ENDS */
+
+/* Footer section */
+footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-social {
+  margin-bottom: 20px;
+}
+
+.footer-social a {
+  margin-right: 20px;
+}
+
+.footer-social img {
+  width: 50px;
+}
+
+footer p {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 640px) {
+  #footerImage {
+    height: 25px;
+    width: 25px;
+  }
+}
+@media screen and (min-width: 640px) {
+  #footerImage {
+    height: 40px;
+    width: 40px;
+  }
+}
